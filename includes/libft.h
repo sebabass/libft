@@ -15,6 +15,7 @@
 
 # include <string.h>
 # define BASE "0123456789ABCDEF"
+# define BUFF_SIZE 8
 
 typedef	struct		s_list
 {
@@ -69,6 +70,7 @@ char				*ft_ltoa_base(long nbr, int base);
 char				*ft_nrot(char *str, int n);
 char				*ft_chinspace(char *str);
 char				**ft_strsplit(char const *s, char c);
+int					ft_get_next_line(int const fd, char **line);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
 int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
